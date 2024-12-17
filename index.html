@@ -8,30 +8,55 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav id="desktop-nav">
         <div class="logo">AK(tion)</div>
         <ul class="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#music">Music</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="layouts/about.html">About</a></li>
+            <li><a href="layouts/projects.html">Projects</a></li>
+            <li><a href="layouts/music.html">Music</a></li>
+            <li><a href="layouts/contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="contents">
-        <div class="main">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="contents">
             <h1>AK(tion)</h1>
-            <p>Software Developer | Music Producer</p>
-            <a href="#contact" class="btn">Contact</a>
+            <p>Software Developer | Music Producer | Audio Engineer</p>
+            <a href="layouts/contact.html" class="btn">Get in Touch</a>
         </div>
-    </div>
+    </header>
 
-    <section>
-        <p>Welcome to the AKtionfolio! My name is Ademide Kosoko, but I am also known as AK, and creatively as AK(tion). 
-           This website is a collection of my work, both technical and creative. Here you can find my programming projects, 
-           beats, graphic designs, and more. Thank you for visiting today, have a blessed day!</p>
-        <p>&copy; 2024 AK(tion) | All Rights Reserved</p>
+    <!-- Overview Section -->
+    <section id="overview">
+        <h2>Welcome to AK(tion)folio</h2>
+        <p>Hi, I’m Ademide Kosoko, also known as AK, and creatively as AK(tion). This is my personal portfolio, where I showcase my passion for technology and music. Explore my projects, listen to my beats, and learn more about my journey as a software developer and music producer.</p>
     </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights">
+        <div class="highlight">
+            <h3>Programming Projects</h3>
+            <p>Check out my software development projects, including web applications and tools that solve real-world problems.</p>
+            <a href="layouts/projects.html" class="btn">Explore Projects</a>
+        </div>
+        <div class="highlight">
+            <h3>Music & Audio</h3>
+            <p>Discover my latest beats and soundscapes. Music is my creative outlet, and I love experimenting with different genres.</p>
+            <a href="layouts/music.html" class="btn">Listen to My Music</a>
+        </div>
+        <div class="highlight">
+            <h3>About Me</h3>
+            <p>Learn more about my background, what drives me, and how I bring creativity into everything I do.</p>
+            <a href="layouts/about.html" class="btn">Get to Know Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AK(tion) | All Rights Reserved</p>
+    </footer>
 
     <script src="main.js"></script>
 </body>
