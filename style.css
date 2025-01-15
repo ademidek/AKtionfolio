@@ -29,7 +29,7 @@ p {
     justify-content: space-between; /* Separates logo and menu */
     align-items: center; /* Vertically aligns items */
     padding: 0 2rem;
-    background: #fff; /* Background color for menu */
+    background: black; /* Background color for menu */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -49,6 +49,10 @@ a:hover, .button:hover {
     text-underline-offset: 4px;
 }
 
+.welcome {
+    display: flex;
+}
+
 menu {
     display: flex;
     justify-content: space-between;
@@ -62,10 +66,29 @@ menu {
     z-index: 1000;
 }
 
+.mypic {
+    border-radius: 100%;
+    width: 40%;
+    height: 40%;
+}
+
+.mypic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
+    font-family: "Modak", serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+    font-style: normal;
+}
+
+.logo:hover, a:hover{
+    color: #f2b1ff;
+    transform: scale(1.1);
 }
 
 .logo-container {
@@ -77,9 +100,12 @@ menu {
 
 .tagline {
     font-size: 1rem; 
-    color: #668;
+    color: white;
     font-style: italic; 
     margin: 0;
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .menu {
@@ -89,13 +115,16 @@ menu {
     list-style: none; /* Removes default list styling */
     margin: 0; 
     padding: 0; 
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Make links larger and bold */
 .menu li a {
-    font-size: 1.5rem; 
+    font-size: 3rem; 
     font-weight: bold; 
-    color: #333; 
+    color: white; 
     padding: 0.5rem 1rem; 
     text-decoration: none; 
     border-radius: 5px; 
@@ -104,7 +133,7 @@ menu {
 
 .menu li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    color: #007acc;
+    color: #f2b1ff;
     transform: scale(1.1);
 }
 
