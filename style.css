@@ -88,7 +88,8 @@ menu {
 
 .logo:hover, a:hover{
     color: #f2b1ff;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    text-decoration: none;
 }
 
 .logo-container {
