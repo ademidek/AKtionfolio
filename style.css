@@ -9,7 +9,7 @@
 body {
     font-family: 'Georgia', serif;
     background: linear-gradient(135deg, #f4f4f4, black);
-    color: #black;
+    color: black;
     line-height: 1.6;
 }
 
@@ -22,6 +22,10 @@ html {
 p {
     color: #444;
     margin: 1rem 0;
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
 }
 
 #desktop-nav {
@@ -55,7 +59,7 @@ a:hover, .button:hover {
     gap: 20px;
 }
 
-.welcome {
+.welcome, #projects, #music, #about, #contact {
     display: flex;
     font-family: "Chicle", serif;
     font-weight: 400;
@@ -158,23 +162,23 @@ menu {
 }
 
 #highlights {
-    display: flexbox;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    gap: 20px; /* Space between buttons */
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
     padding: 20px; /* Add padding around the section */
     /*justify-items: center; /* Center the buttons horizontally */
 }
 
 .lefthighlight {
-    text-align: left; 
-    justify-content: left;
-    align-items: left;
+    text-align: center; 
+    /*justify-content: left;
+    align-items: left;*/
 }
 
 .righthighlight {
-    text-align: right; 
-    justify-content: right;
-    align-items: right;
+    text-align: center; 
+    /*justify-content: right;
+    align-items: right;*/
 }
 
 /* Interactive Buttons */
@@ -196,6 +200,19 @@ menu {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     color: white;
+}
+
+.top-left-btn, .top-right-btn, .bottom-left-btn, .bottom-right-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 /* Button positions */
@@ -226,9 +243,9 @@ menu {
 
 .circle-container {
     position: relative;
-    width: 300px; /* Set container width */
-    height: 300px; /* Set container height */
-    margin: 0 auto; /* Center the container */
+    width: 300px; 
+    height: 300px; 
+    margin: 0 auto; 
 }
 
 /* Smooth Appear Animation */
