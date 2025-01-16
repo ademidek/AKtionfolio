@@ -8,7 +8,7 @@
 /* Body and Background */
 body {
     font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #f4f4f4, black);
+    background: linear-gradient(135deg, #f0e0c4, black);
     color: black;
     line-height: 1.6;
 }
@@ -76,17 +76,17 @@ a:hover, .button:hover {
     border: black;
     border-style: solid;
     border-width: 5px;
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .mypic-container{
     position: absolute;
-    bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 
 .logo {
@@ -167,24 +167,23 @@ a:hover, .button:hover {
     display: flex;
     justify-content: center; /* Center the buttons horizontally */
     align-items: center;/* Add padding around the section */
-    /*justify-items: center; /* Center the buttons horizontally */
+    /*justify-items: center;*/
 }
 
-.top-highlights ul,
-.bottom-highlights ul {
-  display: flex; /* Arrange buttons side by side */
-  gap: 20px; /* Add space between buttons */
+.highlight ul{
+  display: flex;
   padding: 0;
   margin: 0;
   list-style-type: none;
-  gap: 20px;
+  column-gap: 200px;
+  width: 100%;
 }
 
 
 /* Interactive Buttons */
 .btn {
     display: inline-flex;
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1rem;
     background: black;
     margin: 20px;
     color: white;
@@ -205,7 +204,6 @@ a:hover, .button:hover {
     color: black;
 }
 
-
 /* Hover Effects for Items */
 .menu-links a:hover, .btn:hover {
     transform: translateY(-2px);
@@ -213,11 +211,14 @@ a:hover, .button:hover {
 
 .circle-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     font-family: Chicle;
     font-size: 1.5rem;
-    justify-content: center;
-    width: 100%;
+    gap: 350px;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
     height: 100%;
 }
 
