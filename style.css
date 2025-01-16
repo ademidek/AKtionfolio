@@ -20,7 +20,7 @@ html {
 
 /* Paragraphs */
 p {
-    color: #444;
+    color: white;
     margin: 1rem 0;
     font-family: "Chicle", serif;
     font-weight: 400;
@@ -43,7 +43,7 @@ p {
 /* Links and Buttons */
 a, .button {
     transition: all 300ms ease-in-out;
-    color: #333;
+    color: white;
     text-decoration: none;
 }
 
@@ -60,7 +60,6 @@ a:hover, .button:hover {
 }
 
 .welcome, #projects, #music, #about, #contact {
-    display: flex;
     font-family: "Chicle", serif;
     font-weight: 400;
     font-style: normal;
@@ -70,19 +69,6 @@ a:hover, .button:hover {
 .welcome-container{
     display: flex;
     justify-content: center;
-}
-
-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    padding: 0 2rem;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .mypic {
@@ -96,6 +82,8 @@ menu {
 }
 
 .mypic-container{
+    position: absolute;
+    bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,9 +92,11 @@ menu {
 .logo {
     font-family: "Modak", serif;
     font-size: 5rem;
+    height: 100px;
     font-weight: 400;
     color: white;
     font-style: normal;
+    padding: 0px;
 }
 
 .logo:hover, a:hover{
@@ -134,8 +124,8 @@ menu {
 
 .menu {
     display: flex; /* Ensures items are aligned in a row */
-    justify-content: center; /* Centers the links horizontally */
-    gap: 2rem; 
+    justify-content: space-between; /* Centers the links horizontally */
+    gap: 2rem;
     list-style: none; /* Removes default list styling */
     margin: 0; 
     padding: 0; 
@@ -143,6 +133,18 @@ menu {
     font-weight: 400;
     font-style: normal;
 }
+
+
+/*menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 2rem;
+    background: #f2b1ff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 0;
+}*/
 
 /* Make links larger and bold */
 .menu li a {
@@ -164,34 +166,35 @@ menu {
 #highlights {
     display: flex;
     justify-content: center; /* Center the buttons horizontally */
-    align-items: center;
-    padding: 20px; /* Add padding around the section */
+    align-items: center;/* Add padding around the section */
     /*justify-items: center; /* Center the buttons horizontally */
 }
 
-.lefthighlight {
-    text-align: center; 
-    /*justify-content: left;
-    align-items: left;*/
+.top-highlights ul,
+.bottom-highlights ul {
+  display: flex; /* Arrange buttons side by side */
+  gap: 20px; /* Add space between buttons */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: 20px;
 }
 
-.righthighlight {
-    text-align: center; 
-    /*justify-content: right;
-    align-items: right;*/
-}
 
 /* Interactive Buttons */
 .btn {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background: white;
-    color: black;
-    border: none;
+    display: inline-flex;
+    padding: 1.5rem 1.5rem;
+    background: black;
+    margin: 20px;
+    color: white;
+    border-color: #f2b1ff;
+    border: 5px;
+    border-color: #f2b1ff;
     border-radius: 8px;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 24px;
     transition: background-color 0.3s ease;
 }
 
@@ -199,42 +202,9 @@ menu {
     background: #f2b1ff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
-    color: white;
+    color: black;
 }
 
-.top-left-btn, .top-right-btn, .bottom-left-btn, .bottom-right-btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-/* Button positions */
-.top-left-btn {
-    top: 10%;
-    left: 10%;
-}
-
-.top-right-btn {
-    top: 10%;
-    right: 10%;
-}
-
-.bottom-left-btn {
-    bottom: 10%;
-    left: 10%;
-}
-
-.bottom-right-btn {
-    bottom: 10%;
-    right: 10%;
-}
 
 /* Hover Effects for Items */
 .menu-links a:hover, .btn:hover {
@@ -242,10 +212,13 @@ menu {
 }
 
 .circle-container {
-    position: relative;
-    width: 300px; 
-    height: 300px; 
-    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    font-family: Chicle;
+    font-size: 1.5rem;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* Smooth Appear Animation */
@@ -268,6 +241,18 @@ menu {
     animation: fadeIn 1s ease-in-out;
     animation-delay: 0.2s;
     animation-fill-mode: both;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 /* Additional Styling for Footer or Other Sections */
