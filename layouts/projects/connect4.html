@@ -9,30 +9,52 @@
     <title>Pages</title>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav id="desktop-nav">
+        <div class="logo-container">
+            <a href="index.html" class="logo">AK(tion)</a>
+            <div class="tagline">Software Developer | Music Producer | Audio Engineer</div>
+        </div>
+        <ul class="menu">
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../music.html">Music</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="project">
         <div class="project-image">
             <img src = "../../assets/logo.png" alt="Album 1" class = "project-cover">
         </div>
         <div class="project-description">
-            <h3 class="project-title">Connect 4</h3></a>
-            <h6 class="project-artist">Ademide Kosoko</h6>
-            <h6 class="project-genre">Game * 2024</h6>            
-            <p class="project-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptas cum nesciunt deserunt provident, maiores veniam quia distinctio recusandae ad sequi corrupti quam tempora blanditiis sit adipisci nam facere saepe?</p>
+            <h3 class="project-title">Connect 4</h3>
+            <a href="../about.html" class="project-artist">Ademide Kosoko</a>
+            <h6 class="project-genre">JavaScript · Game · 2024</h6>            
+            <p class="project-info">This project simulates a game of Connect 4 with Player 1 being the Red Player and Player 2 being the Yellow Player.
+                The game can be played against a friend or against an AI. The game also allows you to undo previous moves.
+            </p>
             <div class ="project-btns">
-                <a href="https://github.com/ademidek" target="_blank" class="project-btn">View on GitHub</a>
+                <a href="https://github.com/ademidek/aktion-connect-4" target="_blank" class="project-btn">View on GitHub</a>
                 <a href="projects/connect4" class="project-btn">Play Game</a>
             </div>
         </div>
     </div>
-    <div class="project-tracks">
-        <ol>
-            <li>Track 1</li>
-            <li>Track 2</li>
-            <li>Track 3</li>
-            <li>Track 4</li>
-            <li>Track 5</li>
+    <div class="project-tracks-container">
+        <h4 class="project-artist">Features of this project:</h4>
+        <ol class="project-tracks">
+            <li>Play against a friend</li>
+            <li>Play against an AI</li>
+            <li>Undo previous moves</li>
+            <li>Animate pieces as you place them</li>
+            <li>Determines winner using sliding window logic</li>
         </ol>
     </div>
-    
+    <footer>
+        <div>
+            <p>Thanks for coming, have a great day!</p>
+        </div>
+        <p class="footer">&copy; 2024 AK(tion) | All Rights Reserved</p>
+    </footer>
 </body>
 </html>

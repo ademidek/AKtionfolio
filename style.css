@@ -92,6 +92,10 @@ a:hover, .button:hover {
     transition: background-color 0.3s ease;
 }
 
+.project-cover{
+    margin-bottom: 0px;
+}
+
 .album-cover{
     width: 200px;
     height: 200px;
@@ -120,15 +124,18 @@ a:hover, .button:hover {
     font-style: normal;
     color: white;
     margin-left: 20px;
-    margin-top: 0px;
 }
 
 .album-title{
     font-size: 1.5rem;
+    margin-top: 0px;
 }
 
 .project-title{
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-top: 50px;
+    height: 75px;
+    color: black;
 }
 
 .album-artist, .project-artist, .project-genre{
@@ -150,7 +157,7 @@ a:hover, .button:hover {
 }
 
 .project-genre{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -173,12 +180,29 @@ a:hover, .button:hover {
 .project-info{
     font-size: 20px;
     margin-left: 20px;
+    width: 50%;
 }
 
 .project-tracks{
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
+    font-family: "Chicle", serif;
+    font-size: 1.25rem;
+    border: 2px solid black;        
+    margin: 20px; 
+    padding-left: 5px;   
+    margin-top: 0px;      
+    list-style-position: inside; 
+    background-color: white;
+    border-radius: 10px;
+}
+
+.project-tracks li {
+    border-bottom: 1px solid black;
+    padding: 5px 0;     
+    margin: 0;    
+}
+
+.project-tracks li:last-child {
+    border-bottom: none;
 }
 
 .mypic {
@@ -293,17 +317,22 @@ a:hover, .button:hover {
 /* Interactive Buttons */
 .btn, .project-btn {
     display: inline-flex;
-    padding: 1rem 1rem;
-    background: black;
-    margin: 20px;
+    background: #f2b1ff;
     color: white;
-    border: 5px;
     border-color: #f2b1ff;
     border-radius: 8px;
     text-decoration: none;
     cursor: pointer;
-    font-size: 24px;
     transition: background-color 0.3s ease;
+    margin-left: 20px;
+    font-family: 'Chicle', serif;
+}
+
+.btn{
+    font-size: 24px;
+    margin: 20px;
+    border: 5px;
+    padding: 1rem 1rem;
 }
 
 .btn:hover {
@@ -315,6 +344,12 @@ a:hover, .button:hover {
 
 .project-btns{
     margin-top: auto;
+}
+
+.project-btn{
+    font-size: 18px;
+    border: 2px;
+    padding: 5px 5px;
 }
 
 /* Hover Effects for Items */
