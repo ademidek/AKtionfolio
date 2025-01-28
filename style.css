@@ -78,33 +78,79 @@ a:hover, .button:hover {
     gap: 10px;
 }
 
-.album-cover{
-    width: 200px;
+.album-cover, .project-cover{
     display: inline-flex;
     background: black;
     margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
-    border: 0px;
-    border-color: #f2b1ff;
-    /*border-radius: 8px;*/
+    border: 0.5px solid #757678;
+    border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
     font-size: 24px;
     transition: background-color 0.3s ease;
 }
 
-.album-cover:hover {
-    background: #f2b1ff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    color: f2b1ff;
+.album-cover{
+    width: 200px;
+    height: 200px;
 }
 
-.album-title{
+.project-cover{
+    width: 450px;
+    height: 450px;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.album-cover:hover {
+    background: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    border-color: #f2b1ff;
+}
+
+.album-title, .project-title{
     font-family: "Chicle", serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.album-title{
     font-size: 1.5rem;
+}
+
+.project-title{
+    font-size: 3rem;
+}
+
+.album-artist, .project-artist, .project-genre{
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.album-artist{
+    font-size: 1rem;
+    color: white;
+}
+
+.project-artist{
+    font-size: 2rem;
+    color: #f2b1ff;
+}
+
+.project-genre{
+    font-size: 1rem;
     color: white;
 }
 
@@ -118,6 +164,21 @@ a:hover, .button:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.project{
+    display: flex;
+}
+
+.project-info{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.project-tracks{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
 }
 
 .mypic {
@@ -230,7 +291,7 @@ a:hover, .button:hover {
 
 
 /* Interactive Buttons */
-.btn {
+.btn, .project-btn {
     display: inline-flex;
     padding: 1rem 1rem;
     background: black;
@@ -250,6 +311,10 @@ a:hover, .button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     color: black;
+}
+
+.project-btns{
+    margin-top: auto;
 }
 
 /* Hover Effects for Items */
