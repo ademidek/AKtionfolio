@@ -82,10 +82,12 @@ a:hover, .button:hover {
 }
 
 .albums-container {
-    display: grid;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
     gap: 10px;
     margin: auto;
 }
@@ -158,6 +160,7 @@ a:hover, .button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 50px 0 50px;
 }
 
 .album-artist, .project-artist, .project-genre{
@@ -168,7 +171,6 @@ a:hover, .button:hover {
 }
 
 .album-artist{
-    margin-top: 20px;
     text-align: center;
     font-size: 1.5rem;
     color: white;
@@ -461,6 +463,14 @@ footer p {
     height: 80px;
 }
 
+.tech-stack{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .section-title{
         display: flex;
         justify-content: center; 
@@ -475,3 +485,4 @@ footer p {
         width: 20%;
         margin: auto;
 }
+
