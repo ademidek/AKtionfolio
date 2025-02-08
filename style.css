@@ -87,13 +87,13 @@ a:hover, .button:hover {
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
+    margin: auto;
 }
-
 
 .album-cover, .project-cover{
     display: inline-flex;
     background: black;
-    margin: 20px;
+    margin-top: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
     border: 0.5px solid #757678;
@@ -109,8 +109,8 @@ a:hover, .button:hover {
 }
 
 .album-cover{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 .project-cover{
@@ -131,15 +131,18 @@ a:hover, .button:hover {
 }
 
 .album-title, .project-title{
+    display: flex;
     font-family: "Chicle", serif;
     font-weight: 400;
+    text-align: center;
+    justify-content: center;
     font-style: normal;
     color: white;
-    margin-left: 20px;
+    /*margin-left: 20px; used when placing album info to the side*/
 }
 
 .album-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 0px;
 }
 
@@ -150,16 +153,24 @@ a:hover, .button:hover {
     color: black;
 }
 
+.album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .album-artist, .project-artist, .project-genre{
     font-family: "Chicle", serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: 20px;
     margin-top: 0px;
 }
 
 .album-artist{
-    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -310,9 +321,8 @@ a:hover, .button:hover {
 
 #highlights {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center;/* Add padding around the section */
-    /*justify-items: center;*/
+    justify-content: center;
+    align-items: center;
 }
 
 .highlight ul{
@@ -449,4 +459,19 @@ footer p {
 .tech-link{
     width: 80px;
     height: 80px;
+}
+
+.section-title{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        font-family: "Chicle", serif;
+        font-size: 4rem;
+        height: 80px;
+        background-color: black;
+        border-radius: 10px;
+        border: 2px solid white;
+        color: white;
+        width: 20%;
+        margin: auto;
 }
