@@ -85,7 +85,7 @@ a:hover, .button:hover {
     display: inline-flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
     gap: 10px;
@@ -459,12 +459,13 @@ footer p {
 }
 
 .tech-link{
-    width: 80px;
-    height: 80px;
+    width: 20%;
+    height: 20%;
 }
 
 .tech-stack{
     display: inline-flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
