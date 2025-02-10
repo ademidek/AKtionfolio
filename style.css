@@ -459,8 +459,8 @@ footer p {
 }
 
 .tech-link{
-    width: 20%;
-    height: 20%;
+    height: 50px;
+    width: auto;
 }
 
 .tech-stack{
@@ -483,7 +483,7 @@ footer p {
         border-radius: 10px;
         border: 2px solid white;
         color: white;
-        width: 20%;
+        width: fit-content%;
         margin: auto;
 }
 
