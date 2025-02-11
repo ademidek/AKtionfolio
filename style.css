@@ -8,8 +8,8 @@
 /* Body and Background */
 body {
     font-family: 'Georgia', serif;
-    background: linear-gradient(135deg, #a6a6a6, #737373);
-    color: black;
+    background: linear-gradient(135deg, #87b9fa, #4674b0);
+    color: white;
     line-height: 1.6;
 }
 
@@ -20,7 +20,7 @@ html {
 
 /* Paragraphs */
 p {
-    color: black;
+    color: white;
     margin: 1rem 0;
     font-family: "Chicle", serif;
     font-weight: 400;
@@ -33,11 +33,14 @@ p {
     justify-content: space-between; /* Separates logo and menu */
     align-items: center; /* Vertically aligns items */
     padding: 0 2rem;
-    background: black; /* Background color for menu */
+    /*background: linear-gradient(135deg, #4674b0, #7ab2fa, #4674b0, #7ab2fa, #4674b0); /* Background color for menu */
+    background: linear-gradient(135deg, #022554, #87b9fa, #022554, #87b9fa, #022554);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*border-bottom: 1px solid black;*/
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 60px;
 }
 
 /* Links and Buttons */
@@ -71,8 +74,8 @@ a:hover, .button:hover {
     font-size: 4rem;
     align-items: center;
     padding: 20px;
+    gap: 10px;
     font-family: 'Chicle', serif;
-    -webkit-text-stroke: 1px white;
     text-align: center;
     justify-content: center;
 }
@@ -244,18 +247,26 @@ a:hover, .button:hover {
 }
 
 .about-me{
-    display: flex;
-    flex-direction: column-reverse;
+    font-size: 30px;
+}
+#hey{
+    -webkit-text-stroke: 0.5px black;
+}
+
+#hey span{
+    color: #f2b1ff;
 }
 
 .logo {
-    font-family: "Modak", serif;
-    font-size: 5rem;
-    height: 100px;
+    font-family: "Chicle", serif;
+    font-size: 3rem;
     font-weight: 400;
-    color: white;
+    align-items: center;
+    justify-content: center;
+    color: #f2b1ff;
     font-style: normal;
     padding: 0px;
+    -webkit-text-stroke: 1px black;
 }
 
 .logo:hover, a:hover{
@@ -267,8 +278,8 @@ a:hover, .button:hover {
 .logo-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    gap: 0.2rem;
+    align-items: flex-start;
+    height: 60px;
 }
 
 .tagline {
@@ -276,6 +287,7 @@ a:hover, .button:hover {
     color: white;
     font-style: italic; 
     margin: 0;
+    height: 10px;
     font-family: "Chicle", serif;
     font-weight: 400;
     font-style: normal;
@@ -307,19 +319,21 @@ a:hover, .button:hover {
 
 /* Make links larger and bold */
 .menu li a {
-    font-size: 3rem; 
-    font-weight: bold; 
+    font-size: 2rem; 
+    font-weight: 400;
+    font-style: normal;
     color: white; 
     padding: 0.5rem 1rem; 
     text-decoration: none; 
     border-radius: 5px; 
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
+    -webkit-text-stroke: 1px black;
 }
 
 .menu li a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    /*background-color: rgba(0, 0, 0, 0.1);*/
     color: #f2b1ff;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #highlights {
@@ -362,7 +376,7 @@ a:hover, .button:hover {
 .btn:hover {
     background: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+    transform: scale(1.2);
     color: black;
 }
 
@@ -377,7 +391,7 @@ a:hover, .button:hover {
 }
 
 /* Hover Effects for Items */
-.menu-links a:hover, .btn:hover {
+.menu-links, a:hover, .btn:hover {
     transform: translateY(-2px);
 }
 
@@ -471,6 +485,7 @@ footer p {
     align-items: center;
     gap: 20px;
     padding: 50px;
+    background-color: y;
 }
 
 .section-title{
@@ -481,10 +496,9 @@ footer p {
         font-size: 4rem;
         height: 80px;
         background-color: black;
-        border-radius: 10px;
-        border: 2px solid white;
-        color: white;
-        width: fit-content;
+        /*border-radius: 10px;
+        border: 2px solid white;*/
+        /*width: fit-content;*/
         padding: 20px;
         margin: auto;
 }
@@ -511,4 +525,11 @@ footer p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     color: black;
+}
+
+.tech-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
