@@ -8,7 +8,7 @@
 /* Body and Background */
 body {
     font-family: 'Georgia', serif;
-    background-color: white;
+    background-color: black;
     /*background: linear-gradient(135deg, #87b9fa, #4674b0);*/
     color: white;
     line-height: 1.6;
@@ -269,7 +269,7 @@ a:hover, .button:hover {
 }
 
 #hey span{
-    color: #f2b1ff;
+    color: #87b9fa;
 }
 
 .logo {
@@ -278,7 +278,8 @@ a:hover, .button:hover {
     font-weight: 400;
     align-items: center;
     justify-content: center;
-    color: #f2b1ff;
+    /*color: #f2b1ff;*/
+    color: white;
     font-style: normal;
     padding: 0px;
     -webkit-text-stroke: 1px black;
@@ -502,6 +503,7 @@ footer p {
     gap: 20px;
     padding: 50px;
     -webkit-text-stroke: 1px black;
+    background-color:;
 }
 
 .section-title{
@@ -512,6 +514,7 @@ footer p {
     font-size: 3.5rem;
     height: 80px;
     background: linear-gradient(135deg, #022554, #87b9fa, #022554, #87b9fa, #022554);
+    width: 100%;
     /*border-radius: 10px;
     border: 2px solid white;*/
     /*width: fit-content;*/
